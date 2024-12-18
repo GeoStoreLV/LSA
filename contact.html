@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lv">
+    <!--Coded by /Toms Edvards Vucens\-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latvijas Kubu Asociācija</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+</head>
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <div class="header-container">
+                    <img src="LSA.png" alt="Latvijas Kubu Asociācija Logo" class="logo">
+                    <h1>Latvijas Kubu Asociācija</h1>
+                </div>
+            </header>
+
+            <nav>
+                <div class="menu">
+                    <a href="index.html">Sākums</a>
+                    <a href="team.html">Mūsu komanda</a>
+                    <a href="competitions.html">Sacensības</a>
+                    <a href="news.html">Jaunumi</a>
+                    <a href="contact.html">Kontakti</a>
+                </div>
+            </nav>
+
+            <div class="container">
+                <section id="kontakti">
+                    <h2>Sazinies ar mums</h2>
+                    <p>Vai jums ir jautājums? Aizpildiet zemāk esošo veidlapu, un mēs ar jums sazināsimies, cik drīz vien iespējams.</p>
+                    <form id="contactForm">
+                        <p><b>E-Pasts:</b></p>
+                        <input type="email" name="email" required>
+                        <p><b>Jūsu ziņa:</b></p>
+                        <textarea name="message" rows="5" required></textarea>
+                        <br>
+                        <button type="submit">Sūtīt</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Latvijas Kubu Asociācija. Visas tiesības aizsargātas.</p>
+        </footer>
+    </div>
+
+    <script src="email.js"></script>
+</body>
+</html>

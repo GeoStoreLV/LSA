@@ -1,0 +1,290 @@
+/* Pamata stilu uzstādījumi */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%; /* Garantē, ka lapas augstums ir vismaz loga augstums */
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Galvene */
+header {
+    background-color: #960000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .logo {
+    height: 80px;
+    width: auto;
+}
+
+/* Navigācija */
+nav {
+    background-color: #820000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.poga {
+    display: flex;
+    gap: 15px;
+}
+
+.poga a {
+    background-color: #960000;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+.poga a:hover {
+    background-color: #ffcccc;
+    color: #960000;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffcccc;
+    color: #960000;
+}
+
+/* Konteiners */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.news {
+    display: block;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Sekcijas */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #960000;
+    display: inline-block;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 1px;
+}
+
+.grid {
+    max-width: 1500px;
+    margin: 20px auto;
+    gap: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px; /* Atstarpes starp kolonnām */
+}
+
+.colonna {
+    display: flex;
+    flex-direction: column; /* Elementi vienmēr vienā stabiņā */
+    gap: 20px; /* Atstarpes starp elementiem kolonnā */
+}
+
+.colonna:first-child {
+    flex: 0 0 70%; /* Pirmā kolonna 70% */
+}
+
+.colonna:last-child {
+    flex: 0 0 30%; /* Otrā kolonna 30% */
+}
+
+.container-pirma, .container-otra {
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+/* Komandas stils */
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #960000;
+}
+
+/* Karte */
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Kontaktu forma */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    max-width: 98%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #960000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #820000;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garantē, ka augstums ir vismaz loga augstums */
+}
+
+#content-wrap {
+    flex: 1; /* Aizņem visu brīvo vietu starp header un footer */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #960000;
+    color: white;
+    margin-top: 0; /* Noņem jebkādas atstarpes virs footer */
+}
+
+/* Mobilajām ierīcēm */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header .header-container {
+        gap: 5px;
+    }
+
+    nav {
+        padding: 8px 0;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .container-sakums {
+        flex: 1 1 auto; /* Automātisks platums */
+    }
+
+    .grid {
+        flex-direction: column; /* Kolonnas kļūst par stabiem mazā ekrānā */
+    }
+
+    .colonna {
+        flex: 1 1 auto; /* Kolonnas kļūst elastīgas mazā ekrānā */
+    }
+}
