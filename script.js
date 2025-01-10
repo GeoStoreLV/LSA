@@ -15,6 +15,11 @@ const markers = [
         description: "Jan 25 - 26, 2025 - Ropaži"
     },
     {
+        coords: [56.9603, 24.032892],
+        title: '<a href="https://www.worldcubeassociation.org/competitions/BigandBlindRiga2025">Big and Blind Rīga 2025</a>',
+        description: "Feb 8, 2025 - Rīga"
+    },
+    {
         coords: [56.966303, 24.184877],
         title: '<a href="https://www.worldcubeassociation.org/competitions/NxNRiga2025">NxN Rīgā 2025</a>',
         description: "Mar 1, 2025 - Rīga"
