@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latvijas Kubu Asociācija</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="LSA.png" alt="Latvijas Kubu Asociācija Logo" class="logo">
+            <h1>Latvijas Kubu Asociācija</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="menu">
+            <a href="index.html">Sākums</a>
+            <a href="team.html">Mūsu komanda</a>
+            <a href="competitions.html">Sacensības</a>
+            <a href="news.html">Jaunumi</a>
+            <a href="contact.html">Kontakti</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="par-mums">
+            <div class="par-mums">
+                <div>
+                    <img src="Banner2.JPG" alt="img0" class="banner">
+                </div>
+                <div>
+                    <h2>Par mums</h2>
+                    <p>Latvijas Kubu Asociācija (Reģ.nr. 40008332524) ir biedrība, kas apvieno Rubika kuba cienītājus un profesionālus ātrumlikšanas sportistus Latvijā. Dibināta ar mērķi popularizēt šo aizraujošo sporta veidu, biedrība organizē nacionālas un starptautiskas sacensības, kā arī piedalās izglītojošos projektos, lai iedvesmotu jaunus talantus.</p>
+                    <p>Mūsu misija ir veidot spēcīgu un draudzīgu kopienu, kurā ikviens entuziasts var uzlabot savas prasmes, dalīties pieredzē un gūt panākumus gan lokālā, gan starptautiskā mērogā.</p>
+                    <p>Ar biedrības starpniecību mēs veicinām Rubika kuba sporta attīstību, sadarbojamies ar pasaules līmeņa organizācijām un cenšamies panākt augstāko kvalitāti sacensību organizēšanā.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="musukomanda">
+            <h2>Mūsu komanda</h2>
+            <div class="team-member">
+                <img src="Toms.png" alt="Toms Edvards Vucens">
+                <p><strong>Toms Edvards Vucens</strong><br>Komandas vadītājs un pieredzējis Rubika kuba entuziasts ar daudzu gadu pieredzi sacensību organizēšanā un vadībā.</p>
+            </div>
+            <div class="team-member">
+                <img src="Mikus.jpg" alt="Mikus Lembergs">
+                <p><strong>Mikus Lembergs</strong><br>Tehniskais koordinators, atbildīgs par sacensību norisi un tehnisko atbalstu. Mikus nodrošina, ka viss notiek precīzi un laikā.</p>
+            </div>
+            <div class="team-member">
+                <img src="Jānis.jpg" alt="Jānis Zirnis">
+                <p><strong>Jānis Zirnis</strong><br>Sabiedrisko attiecību speciālists, kurš rūpējas par komunikāciju ar dalībniekiem un biedrības atpazīstamību sabiedrībā.</p>
+            </div>
+        </section>
+
+        <section id="sacensibas">
+            <h2>Sacensības</h2>
+            <p>Mūsu sacensības tiek organizētas visā Latvijā, un tās ir atvērtas gan iesācējiem, gan pieredzējušiem dalībniekiem. Apskatiet zemāk esošos paraugus:</p>
+            <div id="map"></div>
+        </section>
+
+        <section id="jaunumi">
+            <h2>Jaunumi</h2>
+            <p>Lasiet jaunākos stāstus par mūsu dalībnieku panākumiem, kā arī aktuālo informāciju par sacensībām un pasākumiem.</p>
+        </section>
+
+        <section id="kontakti">
+            <h2>Kontakti</h2>
+            <form id="contactForm">
+                <input type="email" name="email" placeholder="Jūsu e-pasts" required>
+                <textarea name="message" placeholder="Jūsu ziņa" rows="5" required></textarea>
+                <button type="submit">Sūtīt</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Latvijas Kubu Asociācija. Visas tiesības aizsargātas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

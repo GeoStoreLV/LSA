@@ -10,11 +10,6 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Pievieno paraugus iezīmēm
 const markers = [
     {
-        coords: [56.97303, 24.6342347],
-        title: '<a href="https://www.worldcubeassociation.org/competitions/RopaziWinter2025">Ropaži Winter 2025</a>',
-        description: "Jan 25 - 26, 2025 - Ropaži"
-    },
-    {
         coords: [56.9603, 24.032892],
         title: '<a href="https://www.worldcubeassociation.org/competitions/BigandBlindRiga2025">Big and Blind Rīga 2025</a>',
         description: "Feb 8, 2025 - Rīga"
