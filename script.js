@@ -10,9 +10,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Pievieno paraugus iezīmēm
 const markers = [
      {
-       coords: [56.960069, 24.032195],
-       title: '<a href="https://www.worldcubeassociation.org/competitions/PapildusDisciplinasRiga2025">Papildus Disciplīnas Rīgā 2025</a>',
-       description: "May 17, 2025 - Rīga"
+       coords: [56.972939, 24.634224],
+       title: '<a href="https://www.worldcubeassociation.org/competitions/RopaziMentalBreakdown2025">Ropaži Mental Breakdown 2025</a>',
+       description: "July 12-13, 2025 - Ropaži"
     },
 ];
 
@@ -24,34 +24,6 @@ markers.forEach(marker => {
             .bindPopup(`<b>${marker.title}</b><br>${marker.description}`);
     } else {
         console.error("Kļūda: Nepareizas koordinātas iezīmei", marker);
-    }
-});
-
-(function() {
-    emailjs.init("4f-J8yPZkm1aH2Dvw"); // Replace with your EmailJS User ID
-})();
-
-// Kontaktformas loģika
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const email = e.target.email.value;
-    const message = e.target.message.value;
-
-    if (email && message) {
-        emailjs.send("service_2pf4207", "template_6ln7h5t", {
-            user_email: email,
-            user_message: message
-        }).then(response => {
-            alert("Ziņa veiksmīgi nosūtīta! Paldies par saziņu.");
-            contactForm.reset();
-        }).catch(error => {
-            alert("Radās kļūda. Lūdzu, mēģiniet vēlreiz.");
-            console.error("EmailJS kļūda:", error);
-        });
-    } else {
-        alert("Lūdzu, aizpildiet visus laukus.");
     }
 });
 
