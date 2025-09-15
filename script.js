@@ -10,9 +10,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Pievieno paraugus iezīmēm
 const markers = [
     {
-        coords: [57.816109, 25.615255],
-        title: '<a href="https://www.worldcubeassociation.org/competitions/KarkiOpen2025">Kārķi Open 2025</a>',
-        description: "August 28-31, 2025 - Kārķi"
+        //coords: [57.816109, 25.615255],
+        //title: '<a href="https://www.worldcubeassociation.org/competitions/KarkiOpen2025">Kārķi Open 2025</a>',
+        //description: "August 28-31, 2025 - Kārķi"
      },
 ];
 
